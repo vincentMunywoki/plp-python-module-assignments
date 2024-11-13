@@ -42,10 +42,19 @@
 
 
 
-a = 90
-b = 80
-c = 70
-d = 60
+a = int(input("Enter your grade please: "))
 
-if a = > 90:
+if a > 90:
+    print("Your grade is A")
+
+elif a > 80:
+    print("Your grade id B")
+elif a > 70:
+    print("Your grade is C")
+elif a > 60:
+    print("Your grade is D")
+
+else:
+    print("You failed...")
+
 
