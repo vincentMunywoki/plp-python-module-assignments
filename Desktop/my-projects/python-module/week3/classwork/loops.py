@@ -12,9 +12,10 @@
 
 # func1()
 
-lName = "Munywoki"
+# lName = "Munywoki"
 
-def my_func(fName): # fname is an argument
-    print(fName + " Is Amazing.")
+# def my_func(fName, lNmae): # fname is an argument
+#     # print(fName + " Is Amazing.")
+#     # print(f"{fName} it's Awesome")
 
-my_func("Vincent")
+# my_func("234")
