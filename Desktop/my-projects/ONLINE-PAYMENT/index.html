@@ -18,6 +18,47 @@
         <option value="800">Spider-Man: No Way Home - KES 800</option>
       </select>
     </div>
+    <button class="intaSendPayButton" id="payButton">Pay Now</button>
+  </div>
+
+  <script type="module">
+    import { INTA_SEND_PUBLIC_API_KEY } from "./env.js";
+
+    new window.IntaSend({
+      publicAPIKey: INTA_SEND_PUBLIC_API_KEY,
+      live: false // Set to true when going live
+    })
+    .on("COMPLETE", (results) => { console.log("Do something on success", results); })
+    .on("FAILED", (results) => { console.log("Do something on failure", results); })
+    .on("IN-PROGRESS", (results) => { console.log("Payment in progress status", results); });
+  </script>
+
+  <script src="scrip.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Payment App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/intasend-inlinejs-sdk@4.0.5/build/intasend-inline.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Payment</h1>
+    <div class="movie-selection">
+      <label for="movie">Select a Movie:</label>
+      <select id="movie">
+        <option value="500">Avengers: Endgame - KES 500</option>
+        <option value="700">Inception - KES 700</option>
+        <option value="800">Spider-Man: No Way Home - KES 800</option>
+      </select>
+    </div>
     <button class="intaSendPayButton" data-amount="10" data-currency="KES">Pay Now</button>
   </div>
 
@@ -35,4 +76,4 @@
 
   <script src="scrip.js"></script>
 </body>
-</html>
+</html> -->
