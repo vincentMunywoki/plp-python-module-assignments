@@ -19,4 +19,4 @@ def read_and_write_file(input_file, output_file):
         print(f"An unexpected error occurred: {e}")
 
 # Example usage
-read_and_write_file("input.txt", "output.txt")
+read_and_write_file("myFile.txt", "output.txt")
