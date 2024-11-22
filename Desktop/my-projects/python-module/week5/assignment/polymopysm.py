@@ -16,6 +16,6 @@ plane = Plane()
 boat = Boat()
 
 # Polymorphism in action: calling move() on each object
-print(car.move())  # Output: Driving 🚗
-print(plane.move())  # Output: Flying ✈️
-print(boat.move())  # Output: Sailing 🚢
+print(car.move())  
+print(plane.move())  
+print(boat.move())  
