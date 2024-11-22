@@ -1,14 +1,14 @@
 class Car:
     def move(self):
-        return "Driving 🚗"
+        return "Driving"
 
 class Plane:
     def move(self):
-        return "Flying ✈️"
+        return "Flying"
 
 class Boat:
     def move(self):
-        return "Sailing 🚢"
+        return "Sailing"
 
 # Creating instances of each class
 car = Car()
