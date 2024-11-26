@@ -38,3 +38,9 @@ df = pd.DataFrame(data, columns=['Name', 'Age', 'City'])
 
 print(df)
 
+# Common Plot Types in Matplotlib:
+# Line Plot: Used to display trends over time or sequences.
+# Bar Chart: For comparing discrete categories.
+# Scatter Plot: To visualize relationships between two variables.
+# Histogram: To show the frequency distribution of data.
+# Pie Chart: To represent proportions.
