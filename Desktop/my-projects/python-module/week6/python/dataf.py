@@ -37,4 +37,3 @@ data = np.array([
 df = pd.DataFrame(data, columns=['Name', 'Age', 'City'])
 
 print(df)
-
